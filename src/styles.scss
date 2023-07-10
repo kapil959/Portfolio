@@ -1,0 +1,304 @@
+@fontface {
+  font-family: "Bungee Inline", cursive;
+  src: url("https://fonts.googleapis.com/css?family=Bungee+Inline");
+}
+.App {
+  font-family: " Bungee Inline";
+  text-align: center;
+}
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* height: 100vh; */
+  scroll-behavior: smooth;
+}
+body {
+  /* height: inherit; */
+  line-height: inherit;
+  margin: 0;
+  background-color: #f9fcff;
+  /* background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%); */
+}
+.Toastify {
+  z-index: 10001;
+  position: absolute;
+}
+
+.light,
+.dark {
+  .loaderClass {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+  }
+
+  .blurBackground {
+    backdrop-filter: blur(4px);
+    a {
+      color: white !important;
+    }
+  }
+
+  .centerDiv {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .hero {
+    border: 1px solid rgb(0 0 0 / 16%);
+    box-shadow: -17px 10px black;
+    border-radius: 10px;
+    gap: 1;
+    flex-grow: 1;
+    padding: 24px;
+  }
+
+  .imageStyles {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+  }
+  .colorWhite {
+    background-color: transparent !important;
+  }
+  .avatar {
+    padding-right: 16px;
+    flex-grow: 0.3;
+  }
+
+  .linkedin:hover {
+    box-shadow: 0 5px 8px rgba(3, 169, 244, 0.25);
+    fill: #0288d1;
+    padding: 4px;
+    border-radius: 5px;
+  }
+  .github,
+  .codeSandBox,
+  .CodeSandBoxClass,
+  .linkedin,
+  .projectURL,
+  .whatsapp {
+    box-shadow: 0;
+    transition: all 0.3s ease-in !important ;
+  }
+  .whatsapp:hover {
+    box-shadow: 0 5px 8px rgba(3, 169, 244, 0.25);
+    fill: #25d366;
+    padding: 4px;
+    border-radius: 5px;
+  }
+  .github:hover,
+  .projectURL:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+    fill: rgba(33, 33, 33, 1);
+    padding: 4px;
+    border-radius: 5px;
+  }
+  .CodeSandBoxClass:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+    fill: rgba(33, 33, 33, 1);
+    padding: 4px;
+    border-radius: 5px;
+  }
+
+  .btnClass {
+    margin-right: 24px !important;
+    margin-top: 12px !important;
+    border-radius: 0.5rem !important;
+    border: 2px solid #080808 !important;
+    padding: 0.8rem 1.6rem !important;
+    transform: scale(1) !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease-out !important;
+    color: black !important;
+  }
+  .btnClass:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5) !important;
+    transform: scale(1.025) !important ;
+    transition: all 0.3s ease-in !important ;
+  }
+
+  @media (max-width: 900px) {
+    .hero {
+      border: 1px solid rgb(0 0 0 / 16%);
+      box-shadow: 10px -17px black;
+    }
+    .centerDiv,
+    .aboutMe,
+    #skills,
+    .workEx,
+    .customCssBox,
+    #contactMe {
+      flex-wrap: wrap;
+    }
+    .workEx {
+      height: auto !important;
+      display: block !important;
+    }
+    #containerClass {
+      display: block !important;
+    }
+    .boxWorkEx {
+      display: block !important;
+    }
+    .MuiTabs-flexContainer {
+      padding-left: 0px;
+    }
+    #TabButton {
+      padding-right: 10px !important;
+      padding-left: 10px !important;
+    }
+  }
+  .about,
+  #contactMe {
+    /* height: 100vh; */
+    opacity: 1;
+    background: #262626;
+    /* padding-left: 15em;
+  padding-right: 15em; */
+    padding: 24px;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    color: white;
+  }
+  .aboutMe {
+    margin: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+  #myImage {
+    width: 13rem;
+    overflow: hidden;
+    border-radius: 17px;
+  }
+
+  .svgIconsSkill {
+    /* width: 100%; */
+    fill: white;
+    height: 5rem;
+  }
+  .divIconSkills {
+    display: flex;
+    border-radius: 0.5rem;
+    box-shadow: none;
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow ease-in 1s;
+  }
+  #skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .divIconSkills:hover {
+    box-shadow: 7px 7px 2px 2px rgb(255 253 253);
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  .CodeSandBoxClass {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+  }
+  .drawer {
+    justify-content: center !important;
+  }
+  .modeChange {
+    cursor: pointer;
+  }
+  .displayFlex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #contactMe {
+    // input:focus-visible {
+    //   outline: white auto 1px !important;
+    // }
+    // *:focus-visible {
+    //   outline: white auto 1px !important;
+    // }
+    .MuiOutlinedInput-notchedOutline {
+      border-color: white !important;
+    }
+    * {
+      color: white !important;
+    }
+    .MuiFormHelperText-root {
+      color: red !important;
+    }
+    #borderColorRed-label {
+      color: red !important;
+      border-color: red !important;
+    }
+    // #borderColorRed {
+    //   fieldset {
+    //     border-color: red !important;
+    //   }
+    // }
+    .btnClass {
+      background: white;
+      color: black !important;
+    }
+  }
+}
+.dark {
+  * {
+    color: white !important;
+  }
+  // svg {
+  //   fill: white !important;
+  // }
+  .btnClass {
+    color: white !important;
+    border: 2px solid white !important;
+  }
+  .hero {
+    box-shadow: -17px 10px #d3d3d38f !important;
+  }
+  .avatar {
+    svg {
+      fill: lightgray !important;
+    }
+  }
+  #workEx {
+    button {
+      color: white !important;
+      border: 2px solid white !important;
+    }
+  }
+  .github:hover,
+  .projectURL:hover {
+    box-shadow: 0 5px 8px lightgrey !important;
+    fill: white !important;
+  }
+  .modeChange {
+    cursor: pointer;
+  }
+}

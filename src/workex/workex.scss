@@ -1,0 +1,71 @@
+.workEx {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.customCssBox {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-content: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}
+.tabPanel {
+  width: 100%;
+}
+.TabButton {
+  margin-right: 24px !important;
+  margin-top: 12px !important;
+  border-radius: 0.5rem !important;
+  padding: 0.8rem 1.6rem !important;
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease-out !important;
+  color: black !important;
+}
+.TabButton:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5) !important;
+  -webkit-transform: scale(1.025) !important;
+  transform: scale(1.025) !important;
+  transition: all 0.3s ease-in !important;
+}
+.MuiTabs-flexContainer {
+  padding-left: 24px;
+  padding-bottom: 24px;
+}
+.MuiTabs-indicator {
+  left: 0;
+}
+.Mui-selected {
+  border: 2px solid #080808 !important;
+}
+.workEx {
+  ul {
+    list-style-type: none;
+    text-align: justify;
+    text-justify: inter-word;
+    word-break: break-all;
+  }
+  ul li::before {
+    content: "▹";
+    color: black;
+    margin-left: -1.3em;
+    padding: 5px;
+  }
+}
+.boxWorkEx {
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+}
+.hideClass {
+  display: none;
+}
