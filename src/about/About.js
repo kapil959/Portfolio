@@ -7,7 +7,6 @@ import img1 from "../utils/Kapil_Image.JPG";
 
 const About = () => {
   const { basics } = useAppSelector(getUsersData);
-  console.log(basics)
   return (
     <section id="About" className="about">
       <Container maxWidth="xl">

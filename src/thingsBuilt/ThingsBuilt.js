@@ -8,7 +8,7 @@ const ThingsBuilt = () => {
   const { projects } = useAppSelector(getUsersData);
   const [desc, setDesc] = useState([]);
   const dataDesc = (idx) => {
-    return projects[idx].description.split("/").map((desc) => <li>{desc}</li>);
+    return projects[idx].description.split("/").map((desc,index) => <li key={index}>{desc}</li>);
   };
   const urls = () => {
     return;
@@ -21,12 +21,12 @@ const ThingsBuilt = () => {
         </header>
         {projects.map((project, idx) => {
           return (
-            <div class="project-container">
-              <div class="project">
-                <div class="project-content">
-                  <div class="project-label">Featured Project</div>
-                  <h4 class="project-title">{project.displayName}</h4>
-                  <div class="project-details">
+            <div className="project-container">
+              <div className="project">
+                <div className="project-content">
+                  {/* <div className="project-label">Featured Project</div> */}
+                  <h4 className="project-title">{project.displayName}</h4>
+                  <div className="project-details">
                     <p>{dataDesc(idx)}</p>
                     <ul>
                       <li className="github">
@@ -46,7 +46,7 @@ const ThingsBuilt = () => {
                 </div>
 
                 {project.images.length > 0 ? (
-                  <div class="project-img">
+                  <div className="project-img">
                     <img
                       src={project.images[0]?.resolutions.desktop.url}
                       alt=""

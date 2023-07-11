@@ -50,9 +50,9 @@ export default function WorkExBody({ work }) {
           color="text.secondary"
           gutterBottom
         >
-          <div className="positionCompany">
-            {work.position} @{" "}
-            <span className="companyName">{work.company}</span>
+          <div className="positionCompany ">
+            <strong> {work.position} @{" "}
+            <span className="companyName">{work.company}</span></strong>
           </div>
           <div className="duration">{duration()}</div>
         </Typography>
